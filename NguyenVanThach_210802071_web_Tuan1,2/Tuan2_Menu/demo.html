@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0px auto;
+        padding: 0px;}
+        .wrapper{
+            width:1000px;
+            height: 700px;
+            background-color: antiquewhite;
+        }
+        .header{
+            width: 100%;
+height: 20%;
+ background-color: aqua;
+
+        }
+        .section{
+width: 100%;
+height: 60%;
+background-color: rgb(97, 97, 112);
+        }
+        .footer{
+            height: 20%;
+            width: 100%;
+        }
+        .menu li{
+            float:left;
+            height: 50px;
+            width: 150px;
+            background-color: cadetblue;
+            margin: 25px; 
+            margin-top: 0px;      
+            text-align: center;
+          list-style-type: none;
+          line-height: 50px;
+          position: relative;
+        }
+        .menu li:hover{
+            background-color: black;
+        }
+        .menu li a {
+            text-decoration: none;
+        }
+        .menu li a:hover {
+            background-color: brown;
+        }
+        .menu li .sub-menu{
+            margin: -25px;
+            margin-top: 5px;
+            display: none;
+            position: absolute;
+        }
+        .menu li:hover>.sub-menu{
+            display: block;
+        }
+      .menu li .sub-menu li .sub-2{
+        display: none;
+        position: absolute;
+      }
+        .menu li .sub-menu li:hover>.sub-2{
+            display: block;
+            top: 0px;
+            left: 150px;
+        }
+        .header img{
+            height: 100%;
+            width: 100%;
+        }
+        .footer img{
+            height: 100%;
+            width: 100%;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <img src="img/Screenshot 2024-01-06 201946.png" alt="">
+        </div>
+        <div class="section">
+            <ul class="menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SEVER</a></li>
+                <li><a href="#">WEB</a>
+                <ul class="sub-menu">
+                    <li><a href="">FACEBOOK</a>
+                    <ul class="sub-2">
+                        <li><a href="">KIMCHI</a></li>
+                        <li><a href="">THACH</a></li>
+                    </ul>
+                    </li>
+                    <li><a href="">ZALO</a></li>
+                    <li><a href="">TELEGRAM</a></li>
+                </ul>
+                </li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">JAVA</a></li>
+            </ul>
+            <form action="">
+                <label for="fname">Tai Khoan</label><br>
+                <input type="text" value="KimChi"><br>
+                <label for="fname">Mat Khau</label><br>
+                <input type="password" value="KimChi"><br>
+                <label for="">Gioi Tinh</label><br>
+                <input type="radio" id="gt" name="" value="">
+               <label for="html">Nam</label><br>
+              <input type="radio" id="" name="" value="">
+              <label for="css">Nu</label><br>
+ <input type="submit" name="" id="" value="submit">
+ <input type="reset" value="reset">
+            </form>
+<img src="img/Screenshot 2024-01-06 201918.png" alt="">
+        </div>
+        <div class="footer">
+            <img src="img/Screenshot 2024-01-06 202015.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
